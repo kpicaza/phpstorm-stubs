@@ -980,12 +980,10 @@ final class Fiber
      */
     public function getReturn() {}
 
-    public static function getCurrent() {}
-
     /**
      * @return self|null Returns the currently executing fiber instance or NULL if in {main}.
      */
-    public static function this() {}
+    public static function getCurrent() {}
 
     /**
      * Suspend execution of the fiber. The fiber may be resumed with {@see Fiber::resume()} or {@see Fiber::throw()}.
